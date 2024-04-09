@@ -1,0 +1,219 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url("img/theme.png") center no-repeat;
+    background-size: cover;
+    color: #0a0a0a;
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 18px;
+}
+
+h1.title {
+    font-size: 55px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 2%;
+    margin-left: 1%;
+    display: block;
+    float: left;
+
+}
+
+#new-game {
+    top: 2%;
+}
+
+@media screen and (max-height: 600px) {
+    h1.title {
+        font-size: 27px !important;
+        margin-top: 2% !important;
+    }
+
+}
+
+@media screen and (max-width: 1248px) {
+    h1.title {
+        font-size: 27px !important;
+        margin-top: 2% !important;
+    }
+
+    #quest-grid {
+        max-width: 100%;
+    }
+
+    #quest-container {
+        max-width: 25%;
+    }
+}
+
+#time-display,
+#score-display,
+#gazdag-display,
+#fasor-display,
+#krumpli-display,
+#hatar-display,
+#new-game,
+#rotate,
+#mirror {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#rotate {
+    top: 61%;
+}
+
+#mirror {
+    top: 61%;
+    right: 120px;
+}
+
+#time-display,
+#score-display {
+    font-size: 27px;
+}
+
+#gazdag-display,
+#fasor-display,
+#krumpli-display,
+#hatar-display {
+    font-size: 18px;
+}
+
+#time-display {
+    top: 25%;
+    right: 20px;
+}
+
+#score-display {
+    top: 19%;
+    right: 20px;
+}
+
+#gazdag-display {
+    top: 12%;
+    right: 160px;
+}
+
+#fasor-display {
+    top: 8%;
+    right: 20px;
+}
+
+#krumpli-display {
+    top: 8%;
+    right: 115px;
+}
+
+#hatar-display {
+    top: 12%;
+    right: 20px;
+}
+
+#quest-score-container {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 2%;
+    margin-right: 1%;
+    display: block;
+    float: right;
+}
+
+#container {
+    width: 80vh;
+    height: 80vh;
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    top: 15%;
+    left: 1%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#quest-container {
+    width: 78vh;
+    height: 30vh;
+    background-color: rgba(255, 255, 255, 0.404);
+    border-radius: 15px;
+    position: absolute;
+    top: 30%;
+    right: 1%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#quest-grid td {
+    width: calc(80vh / 1.5 - 6px);
+    height: calc(80vh / 6 - 6px);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.glow {
+    box-shadow: 0 0 20px rgba(0, 255, 0, 1);
+}
+
+#element-container {
+    width: 26vh;
+    height: 26vh;
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    top: 69%;
+    right: 1%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+#element-container td {
+    width: calc(80vh / 11 - 6px);
+    height: calc(80vh / 11 - 6px);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#grid {
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+#grid td {
+    width: calc(80vh / 11 - 6px);
+    height: calc(80vh / 11 - 6px);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#grid td.placeable:hover {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+#grid td.unplaceable:hover {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
