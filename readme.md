@@ -1,0 +1,5 @@
+# Cartographer
+
+Next to Nekeresdország is a massive country, the Potato Empire, much of which remains unknown and uninhabited to this day. Its ruler, Empress Pityóka, has ordered the mapping and settlement of these territories. As a first step, she has entrusted you as an imperial cartographer to explore the landscape. The Empress defines missions to determine which landscapes she would like to see in her empire. Help her fulfill her wishes as best as you can, so your reputation can grow accordingly!
+
+In this single-player game, you have to place various shaped map elements of different terrain types on an 11x11 grid map. Each element has a time value (1 or 2), and the game consists of 28 time units. At the end (or during) the game, based on the current state of the grid, you need to perform several checks (missions), and the final score is determined based on this.
